@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать — Lumina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Lumina</a>
+        <div>
+            <a href="index.html">Главная</a>
+            <a href="features.html">Возможности</a>
+            <a href="order.html">Заказать</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <h2>Оформить предзаказ</h2>
+        
+        <img src="headphones-hero.jpg" alt="Lumina" class="product-side" style="width: 220px; margin-bottom: 1.5rem;">
+
+        <p>Оставь заявку — мы свяжемся с тобой в течение дня</p>
+
+        <form onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.');">
+            <input type="text" placeholder="Твоё имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Телефон">
+            <textarea placeholder="Комментарий (необязательно)" rows="3"></textarea>
+            <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
